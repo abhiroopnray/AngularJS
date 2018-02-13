@@ -10,17 +10,17 @@
 
     <style>
     .new-class{
-      font-size: 72px
+      font-size: 72px;
     }
 
     .other-class{
-      52px
+      font-size: 32px;
     }
     </style>
 
   </head>
   <body>
-    <h1 class="new-class" ng-if="{'other-class': name}">Hello,
+    <h1 class="new-class" ng-class="{'other-class': name}">Hello,
       <span ng-if='!name'> World</span>
       <span ng-if='name'>{{ name }}</span>
         !
