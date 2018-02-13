@@ -8,9 +8,24 @@
     <!--<script src = '../js/angular.js'></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 
+    <style>
+    .new-class{
+      font-size: 72px
+    }
+
+    .other-class{
+      52px
+    }
+    </style>
+
   </head>
   <body>
-    <h1>Hello, {{ name }}!</h1>
+    <h1 class="new-class" ng-if="{'other-class': name}">Hello,
+      <span ng-if='!name'> World</span>
+      <span ng-if='name'>{{ name }}</span>
+        !
+    </h1>
     <input type='text' ng-model='name'/>
+
   </body>
 </html>
