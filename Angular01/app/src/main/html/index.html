@@ -1,4 +1,4 @@
-<html lang="en" ng-app>
+<html lang="en" ng-app='learn'>
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatiable" content="IE=edge">
@@ -7,8 +7,12 @@
 
     <!--<script src = '../js/angular.js'></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="../js/app/app.config.js"></script>
+
     <script src="../js/app/app.module.js"></script>
+    <script src="../js/app/app.config.js"></script>
+
+    <script src="../js/app/blog-list/blog-list.module.js"></script>
+    <script src="../js/app/blog-list/blog-list.component.js"></script>
 
     <style>
     .new-class{
@@ -20,18 +24,23 @@
     }
 
     .new-class2{
-      font-size: : 1px;
+      font-size: 10px;
     }
     </style>
 
   </head>
   <body>
-    <h1 class="new-class" ng-class="{'new-class2':name=='Abcd'}">Hello,
+    <h1 class="new-class" ng-class="{'other-class': name=='Abc', 'new-class2':font==10}">Hello,
       <span ng-if='!name'> World</span>
       <span ng-if='name'>{{ name }}</span>
         !!!
     </h1>
     <input type='text' ng-model='name'/>
     <input text='text' ng-model='font' placeholder="Enter font size"/>
+
+    <div class="" ng-controller = 'BlogListController'>
+      {{ tittle }}
+    </div>
+
   </body>
 </html>

@@ -1,3 +1,3 @@
 'use strict'
 
-angular.module ('learn', []);
+angular.module ('learn', ['blogList']);
