@@ -1,4 +1,4 @@
-<html lang="en" ng-app='learn'>
+<html lang="en" ng-app>
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatiable" content="IE=edge">
@@ -20,16 +20,16 @@
     }
 
     .new-class2{
-      font-size: : 120px;
+      font-size: : 1px;
     }
     </style>
 
   </head>
   <body>
-    <h1 class="new-class" ng-class="{'other-class': name=='Abc', 'new-class2':font==120}">Hello,
+    <h1 class="new-class" ng-class="{'new-class2':name=='Abcd'}">Hello,
       <span ng-if='!name'> World</span>
       <span ng-if='name'>{{ name }}</span>
-        !
+        !!!
     </h1>
     <input type='text' ng-model='name'/>
     <input text='text' ng-model='font' placeholder="Enter font size"/>
