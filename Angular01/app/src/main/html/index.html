@@ -16,13 +16,17 @@
     }
 
     .other-class{
-      font-size: {{ font }};
+      font-size: 32px;
+    }
+
+    .new-class2{
+      font: 120px;
     }
     </style>
 
   </head>
   <body>
-    <h1 class="new-class" ng-class="{'other-class': name=='Abc'}">Hello,
+    <h1 class="new-class" ng-class="{'other-class': name=='Abc', 'new-class2':font==120}">Hello,
       <span ng-if='!name'> World</span>
       <span ng-if='name'>{{ name }}</span>
         !
